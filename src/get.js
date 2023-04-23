@@ -24,6 +24,6 @@ module.exports.handler = async (event) => {
 		response.body = JSON.stringify({ message: "Failed to get file.", errorMessage: e });
 		response.statusCode = 500;
 	}
-
+ 	console.log(response);
 	return response;
 };
